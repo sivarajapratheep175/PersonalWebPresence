@@ -1,15 +1,15 @@
     /* ── Design Tokens ── */
     :root {
-      --bg:        #05080d;
-      --surface:   #0b0f15;
-      --card:      #0f141b;
+      --bg:        linear-gradient(110deg, #49cde22e, #1239a3);
+      --surface:   #3d3232;
+      --card:      #7193c3;
       --border:    rgba(255,255,255,0.06);
-      --border-h:  rgba(52,211,153,0.35);
-      --accent:    #34d399;
-      --accent2:   #22d3ee;
-      --text:      #eaf0f6;
-      --sub:       #7a8fa6;
-      --faint:     #3a4a5a;
+      --border-h:  rgba(117, 118, 177, 0.35);
+      --accent:    #00030b;
+      --accent2:   #2288eebb;
+      --text:      #000000;
+      --sub:       #072648;
+      --faint:     #000000;
       --font-head: 'Cabinet Grotesk', sans-serif;
       --font-body: 'Instrument Sans', sans-serif;
       --r:         14px;
@@ -50,7 +50,7 @@
 
     .bg-orb-1 {
       width: 500px; height: 500px;
-      background: radial-gradient(circle, #34d399, transparent 70%);
+      background: radial-gradient(circle, #134834, transparent 70%);
       top: -100px; left: -100px;
       animation-delay: 0s;
     }
@@ -93,7 +93,7 @@
       z-index: 1;
       max-width: 860px;
       margin: 0 auto;
-      padding: 0 1.5rem;
+      padding: 0 1rem;
     }
 
     /* ── Nav ── */
@@ -108,7 +108,7 @@
       justify-content: space-between;
       backdrop-filter: blur(24px) saturate(1.4);
       -webkit-backdrop-filter: blur(24px) saturate(1.4);
-      background: rgba(5, 8, 13, 0.75);
+      background: rgba(7, 74, 128, 0.75);
       border-bottom: 1px solid var(--border);
     }
 
@@ -132,6 +132,11 @@
       align-items: center;
       gap: 6px;
     }
+    .nav-logo img {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    } 
 
     .nav-logo .dot {
       display: inline-block;
@@ -160,7 +165,7 @@
 
     .nav-links a:hover {
       color: var(--text);
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.167);
     }
 
     .nav-toggle {
@@ -175,7 +180,7 @@
       transition: color var(--transition), background var(--transition);
     }
 
-    .nav-toggle:hover { color: var(--text); background: rgba(255,255,255,0.05); }
+    .nav-toggle:hover { color: var(--text); background: rgba(192, 37, 37, 0); }
 
     /* ── Hero ── */
     #hero {
@@ -193,8 +198,8 @@
       gap: 0.5rem;
       padding: 0.3rem 0.9rem;
       border-radius: 100px;
-      border: 1px solid rgba(52,211,153,0.2);
-      background: rgba(52,211,153,0.06);
+      border: 1px solid rgba(52, 78, 211, 0.2);
+      background: rgba(45, 83, 186, 0.06);
       font-size: 0.72rem;
       font-weight: 500;
       color: var(--accent);
@@ -290,13 +295,13 @@
     .btn-ghost:hover {
       color: var(--text);
       border-color: rgba(255,255,255,0.15);
-      background: rgba(255,255,255,0.04);
+      background: rgba(174, 111, 111, 0.04);
       transform: translateY(-1px);
     }
 
     /* ── Section Shared ── */
     .section {
-      padding: 5rem 0;
+      padding: 3rem 0;
     }
 
     .section-eyebrow {
@@ -332,7 +337,7 @@
     .section-sub {
       font-size: 1rem;
       color: var(--sub);
-      margin-bottom: 2.75rem;
+      margin-bottom: 2rem;
     }
 
     /* ── Divider ── */
@@ -345,7 +350,7 @@
     #about .about-body {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3rem;
+      gap: 1rem;
       align-items: start;
     }
 
@@ -418,7 +423,6 @@
       transition: all var(--transition);
       position: relative;
       overflow: hidden;
-      group: true;
     }
 
     .link-card::after {
@@ -433,7 +437,7 @@
     .link-card:hover {
       border-color: var(--border-h);
       transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(52,211,153,0.1);
+      box-shadow: 0 8px 32px rgba(213, 203, 203, 0.4), 0 0 0 1px rgba(52,211,153,0.1);
     }
 
     .link-card:hover::after { opacity: 1; }
@@ -441,7 +445,7 @@
     .link-icon-wrap {
       width: 38px; height: 38px;
       border-radius: 10px;
-      background: rgba(255,255,255,0.04);
+      background: rgba(154, 173, 198, 0.262);
       border: 1px solid var(--border);
       display: flex;
       align-items: center;
@@ -453,8 +457,8 @@
     }
 
     .link-card:hover .link-icon-wrap {
-      background: rgba(52,211,153,0.1);
-      border-color: rgba(52,211,153,0.3);
+      background: rgba(52, 52, 211, 0.1);
+      border-color: rgba(94, 52, 211, 0.3);
       color: var(--accent);
     }
 
@@ -527,7 +531,7 @@
       padding: 0.55rem 1.2rem;
       border-radius: 100px;
       border: 1px solid var(--border);
-      background: rgba(255,255,255,0.03);
+      background: rgba(255, 255, 255, 0.014);
       color: var(--sub);
       text-decoration: none;
       font-size: 0.85rem;
@@ -537,7 +541,7 @@
 
     .contact-pill:hover {
       color: var(--accent);
-      border-color: rgba(52,211,153,0.35);
+      border-color: rgba(52, 78, 211, 0.35);
       background: rgba(52,211,153,0.06);
       transform: translateY(-2px);
     }
@@ -547,7 +551,8 @@
       border-top: 1px solid var(--border);
       padding: 1.75rem 1.5rem;
       text-align: center;
-      color: var(--faint);
+      color: #f4f4f4;
+      opacity: 0.6;
       font-size: 0.8rem;
       line-height: 1.9;
     }
@@ -600,7 +605,7 @@
         flex-direction: column;
         position: fixed;
         top: 60px; left: 0; right: 0;
-        background: rgba(11,15,21,0.97);
+        background: rgba(89, 142, 221, 0.97);
         backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--border);
         padding: 1.25rem 1.5rem;
