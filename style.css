@@ -1,15 +1,15 @@
     /* ── Design Tokens ── */
     :root {
-      --bg:        linear-gradient(110deg, #49cde22e, #1239a3);
+      --bg:        linear-gradient(110deg, #49cde22e, #2e4faa);
       --surface:   #3d3232;
       --card:      #7193c3;
       --border:    rgba(255,255,255,0.06);
       --border-h:  rgba(117, 118, 177, 0.35);
       --accent:    #00030b;
       --accent2:   #2288eebb;
-      --text:      #000000;
+      --text:      #080f94ca;
       --sub:       #072648;
-      --faint:     #000000;
+      --faint:     #324ab3b5;
       --font-head: 'Cabinet Grotesk', sans-serif;
       --font-body: 'Instrument Sans', sans-serif;
       --r:         14px;
@@ -50,14 +50,14 @@
 
     .bg-orb-1 {
       width: 500px; height: 500px;
-      background: radial-gradient(circle, #134834, transparent 70%);
+      background: radial-gradient(circle, #132348, transparent 70%);
       top: -100px; left: -100px;
       animation-delay: 0s;
     }
 
     .bg-orb-2 {
       width: 400px; height: 400px;
-      background: radial-gradient(circle, #22d3ee, transparent 70%);
+      background: radial-gradient(circle, #225cee, transparent 70%);
       top: 40%; right: -80px;
       opacity: 0.09;
       animation-delay: -6s;
@@ -165,7 +165,7 @@
 
     .nav-links a:hover {
       color: var(--text);
-      background: rgba(255, 255, 255, 0.167);
+      background: rgb(105, 126, 221);
     }
 
     .nav-toggle {
@@ -198,8 +198,8 @@
       gap: 0.5rem;
       padding: 0.3rem 0.9rem;
       border-radius: 100px;
-      border: 1px solid rgba(52, 78, 211, 0.2);
-      background: rgba(45, 83, 186, 0.06);
+      border: 1px solid rgba(52, 60, 211, 0.2);
+      background: rgba(40, 81, 194, 0.307);
       font-size: 0.72rem;
       font-weight: 500;
       color: var(--accent);
@@ -276,13 +276,13 @@
 
     .btn-primary {
       background: var(--accent);
-      color: #05080d;
+      color: #8babe3;
       border: 1px solid var(--accent);
     }
 
     .btn-primary:hover {
-      background: #4ade9e;
-      box-shadow: 0 0 28px rgba(52,211,153,0.35);
+      background: #4a83de;
+      box-shadow: 0 0 28px rgba(52, 81, 211, 0.35);
       transform: translateY(-1px);
     }
 
@@ -343,7 +343,7 @@
     /* ── Divider ── */
     .divider {
       border: none;
-      border-top: 1px solid var(--border);
+      border-top: 1.2px solid var(--border);
     }
 
     /* ── About ── */
@@ -356,7 +356,7 @@
 
     #about .about-text {
       font-size: 1rem;
-      color: #8fa5bc;
+      color: #030507;
       line-height: 1.85;
     }
 
@@ -550,8 +550,9 @@
     footer {
       border-top: 1px solid var(--border);
       padding: 1.75rem 1.5rem;
+      background-color: #00030b0d;
       text-align: center;
-      color: #f4f4f4;
+      color: #fffafacb;
       opacity: 0.6;
       font-size: 0.8rem;
       line-height: 1.9;
