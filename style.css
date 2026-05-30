@@ -1,13 +1,13 @@
     /* ── Design Tokens ── */
     :root {
-      --bg:        linear-gradient(110deg, #49cde22e, #2e4faa);
+      --bg:        linear-gradient(110deg, #0d0d0d2e, #fafbff);
       --surface:   #3d3232;
       --card:      #7193c3;
       --border:    rgba(255,255,255,0.06);
       --border-h:  rgba(117, 118, 177, 0.35);
       --accent:    #00030b;
       --accent2:   #2288eebb;
-      --text:      #080f94ca;
+      --text:      #000107ca;
       --sub:       #072648;
       --faint:     #324ab3b5;
       --font-head: 'Cabinet Grotesk', sans-serif;
@@ -244,7 +244,7 @@
 
     .hero-desc {
       font-size: clamp(1rem, 2.5vw, 1.125rem);
-      color: var(--sub);
+      color: #071348;
       max-width: 480px;
       line-height: 1.75;
       margin-bottom: 2.5rem;
@@ -276,7 +276,7 @@
 
     .btn-primary {
       background: var(--accent);
-      color: #8babe3;
+      color: #b7c7e3;
       border: 1px solid var(--accent);
     }
 
@@ -429,7 +429,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(52,211,153,0.05), transparent);
+      background: linear-gradient(135deg, rgba(52, 211, 153, 0.05), transparent);
       opacity: 0;
       transition: opacity var(--transition);
     }
@@ -437,7 +437,7 @@
     .link-card:hover {
       border-color: var(--border-h);
       transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(213, 203, 203, 0.4), 0 0 0 1px rgba(52,211,153,0.1);
+      box-shadow: 0 8px 32px rgba(28, 26, 26, 0.944), 0 0 0 1px rgba(52,211,153,0.1);
     }
 
     .link-card:hover::after { opacity: 1; }
@@ -550,9 +550,9 @@
     footer {
       border-top: 1px solid var(--border);
       padding: 1.75rem 1.5rem;
-      background-color: #00030b0d;
+      background-color: #00030b53;
       text-align: center;
-      color: #fffafacb;
+      color: #0d0d0dfc;
       opacity: 0.6;
       font-size: 0.8rem;
       line-height: 1.9;
