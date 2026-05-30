@@ -137,15 +137,6 @@
       border-radius: 50%;
       object-fit: cover;
     } 
-
-    .nav-logo .dot {
-      display: inline-block;
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: var(--accent);
-      margin-bottom: 1px;
-    }
-
     .nav-links {
       display: flex;
       gap: 0.25rem;
@@ -165,7 +156,7 @@
 
     .nav-links a:hover {
       color: var(--text);
-      background: rgb(105, 126, 221);
+      background: rgb(174, 176, 184);
     }
 
     .nav-toggle {
@@ -344,63 +335,6 @@
     .divider {
       border: none;
       border-top: 1.2px solid var(--border);
-    }
-
-    /* ── About ── */
-    #about .about-body {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      align-items: start;
-    }
-
-    #about .about-text {
-      font-size: 1rem;
-      color: #030507;
-      line-height: 1.85;
-    }
-
-    #about .about-text strong {
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    #about .about-text p + p { margin-top: 1rem; }
-
-    .stats-col {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-    }
-
-    .stat-item {
-      padding: 1.25rem 1.5rem;
-      background: var(--card);
-      border: 1px solid var(--border);
-      transition: border-color var(--transition);
-    }
-
-    .stat-item:first-child { border-radius: var(--r) var(--r) 0 0; }
-    .stat-item:last-child  { border-radius: 0 0 var(--r) var(--r); }
-
-    .stat-item:hover { border-color: var(--border-h); }
-
-    .stat-number {
-      font-family: var(--font-head);
-      font-size: 1.75rem;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      line-height: 1.1;
-    }
-
-    .stat-label {
-      font-size: 0.8rem;
-      color: var(--sub);
-      margin-top: 0.2rem;
     }
 
     /* ── Links Grid ── */
@@ -620,11 +554,6 @@
       }
 
       .nav-toggle { display: flex; align-items: center; }
-
-      #about .about-body {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
 
       .contact-card { padding: 2.5rem 1.5rem; }
 
