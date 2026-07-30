@@ -1,12 +1,12 @@
     /* ── Design Tokens ── */
     :root {
-      --bg:        linear-gradient(110deg, #bbe0176e, hsl(0, 0%, 100%));
+      --bg:        linear-gradient(110deg, #44555b6e, hsl(0, 0%, 100%));
       --surface:   #3d3232;
-      --card:      #8fc630;
+      --card:      linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
       --border:    rgba(255,255,255,0.06);
       --border-h:  rgba(117, 118, 177, 0.35);
       --accent:    #00030b;
-      --accent2:   #22eebbbb;
+      --accent2:   #2e4086e0;
       --text:      #000107ca;
       --sub:       #072648;
       --faint:     #324ab3b5;
@@ -484,7 +484,7 @@
     footer {
       border-top: 1px solid var(--border);
       padding: 1.75rem 1.5rem;
-      background-color: #9be82ff8;
+      background-color: #949690f8;
       text-align: center;
       color: #0d0d0dfc;
       opacity: 0.6;
