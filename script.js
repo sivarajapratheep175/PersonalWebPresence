@@ -44,4 +44,6 @@
       });
     }, { threshold: 0.4 });
 
+
+
     sections.forEach(s => sectionObserver.observe(s));
