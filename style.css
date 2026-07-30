@@ -274,7 +274,7 @@
     }
 
     .btn-primary:hover {
-      background: #4a83de;
+      background: #717171;
       box-shadow: 0 0 28px rgba(52, 81, 211, 0.35);
       transform: translateY(-1px);
     }
@@ -291,7 +291,6 @@
       background: rgba(174, 111, 111, 0.04);
       transform: translateY(-1px);
     }
-
     /* ── Section Shared ── */
     .section {
       padding: 3rem 0;
@@ -542,7 +541,7 @@
         flex-direction: column;
         position: fixed;
         top: 60px; left: 0; right: 0;
-        background: rgba(89, 142, 221, 0.97);
+        background: rgba(118, 118, 118, 0.97);
         backdrop-filter: blur(20px);
         border-bottom: 1px solid var(--border);
         padding: 1.25rem 1.5rem;
