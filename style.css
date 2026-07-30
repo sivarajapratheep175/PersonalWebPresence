@@ -1,13 +1,13 @@
     /* ── Design Tokens ── */
     :root {
-      --bg:        linear-gradient(110deg, #44555b6e, hsl(0, 0%, 100%));
+      --bg:        linear-gradient(110deg, #44555b6e, hsl(0, 3%, 76%));
       --surface:   #3d3232;
-      --card:      linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+      --card:      linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.595));
       --border:    rgba(255,255,255,0.06);
       --border-h:  rgba(117, 118, 177, 0.35);
-      --accent:    #00030b;
-      --accent2:   #2e4086e0;
-      --text:      #000107ca;
+      --accent:    #060b18;
+      --accent2:   #3e3e41b0;
+      --text:      #000107b4;
       --sub:       #072648;
       --faint:     #324ab3b5;
       --font-head: 'Cabinet Grotesk', sans-serif;
@@ -57,7 +57,7 @@
 
     .bg-orb-2 {
       width: 400px; height: 400px;
-      background: radial-gradient(circle, #225cee, transparent 70%);
+      background: radial-gradient(circle, #4c4f57, transparent 70%);
       top: 40%; right: -80px;
       opacity: 0.09;
       animation-delay: -6s;
@@ -65,7 +65,7 @@
 
     .bg-orb-3 {
       width: 300px; height: 300px;
-      background: radial-gradient(circle, #818cf8, transparent 70%);
+      background: radial-gradient(circle, #77787c, transparent 70%);
       bottom: 10%; left: 30%;
       opacity: 0.07;
       animation-delay: -12s;
@@ -156,7 +156,7 @@
 
     .nav-links a:hover {
       color: var(--text);
-      background: rgb(16, 52, 194);
+      background: rgb(153, 155, 159);
     }
 
     .nav-toggle {
@@ -227,6 +227,8 @@
     }
 
     .hero-name .highlight {
+      font-family: var(--font-head);
+      font-weight: 900;
       background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -484,7 +486,7 @@
     footer {
       border-top: 1px solid var(--border);
       padding: 1.75rem 1.5rem;
-      background-color: #949690f8;
+      background-color: #7d7d7d6d;
       text-align: center;
       color: #0d0d0dfc;
       opacity: 0.6;
