@@ -1,4 +1,7 @@
     // ── Mobile nav toggle ──
+
+alert("Hello !!!");
+
     const toggle   = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
     const icon     = toggle.querySelector('i');
@@ -43,5 +46,7 @@
         }
       });
     }, { threshold: 0.4 });
+
+
 
     sections.forEach(s => sectionObserver.observe(s));
